@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   # SESSIONS
   get '/login', to: 'sessions#new'
+  get '/logout', to: 'sessions#destroy'
   post '/sessions', to: 'sessions#create'
 
 end
